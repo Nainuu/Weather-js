@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 90%;
+    max-width: 500px;
+    background-image: url('/bk.jpeg');
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+    padding: 2em 0em;
+}
+.card div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .2em 2em;
+}
+
+.card .search {
+    display: grid;
+    grid-template-columns: 80% 16%;
+    gap:1em;
+}
+.card .search .cityName {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 1em 1.4em;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 0px rgb(0, 0, 0 , .57);
+    caret-color: black;
+    letter-spacing: 0.05em;
+    color: #333;
+    background-color: rgb(64, 72, 89);
+    border: grey solid 3px;
+}
+
+.card .search .searchBtn  {
+    border-radius: 50%;
+    background-color: rgb(64, 72, 89);
+    border: grey solid 3px;
+    outline: none;
+    overflow:hidden;
+    box-shadow: 2px 2px 0px rgb(0, 0, 0 , .57);
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+.card .search .cityName:hover ,.card .search .searchBtn:hover {
+    border-color: #333;
+    background-color: rgb(92, 92, 92);
+    color: rgb(229, 215, 215);
+    font-weight: 500;
+    letter-spacing: 0.06em;
+}
+
+.card .search .searchBtn img {
+    width: 16px;
+}
+
+.card .weather {
+    padding: 2rem;
+}
+
+.card .weather img{
+    width: 150px;
+    height: 150px;
+}
+
+.card .temp {
+    font-size: 4em;
+}
+.card .city {
+    font-size: 3em;
+    padding: 0.4em;
+}
+
+.humidity img {
+    padding-left:40px ;
+}
+.humidity div , .wind div{
+    margin-left: -1em;
+    display: flex;
+    flex-flow: column;
+}
+
+.card .humidity_wind p {
+    margin-top: 0.2em;
+    white-space: nowrap;
+}
+
+.humidityS , .windS {
+    font-size: 1.5em;
+}
